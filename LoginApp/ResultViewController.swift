@@ -9,7 +9,12 @@ import UIKit
 
 final class ResultViewController: UIViewController {
 
+    @IBOutlet var greetingsLabel: UILabel!
+    
+    var username: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        greetingsLabel.text = "Hello, \(username ?? "")"
     }
 }

@@ -20,6 +20,10 @@ final class LoginViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destinationVC = segue.destination as? ResultViewController else { return }
+        destinationVC.username = userNameTF.text ?? ""
+    }
     
     @IBAction func forgotUsernameTapped() {
         showAlert(

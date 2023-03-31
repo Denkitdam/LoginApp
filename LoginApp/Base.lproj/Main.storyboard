@@ -113,6 +113,9 @@
                                 <state key="normal" title="Log out">
                                     <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="logOutButtonTapped" destination="xT9-1j-aet" eventType="touchUpInside" id="AVA-7B-6z2"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Gao-kx-NDo">
                                 <rect key="frame" x="98.5" y="119" width="123" height="108"/>

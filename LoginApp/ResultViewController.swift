@@ -18,7 +18,11 @@ final class ResultViewController: UIViewController {
         greetingsLabel.text = "Hello, \(username ?? "")"
     }
     
-    override func viewDidLayoutSubviews() {
+    @IBAction func logOutButtonTapped() {
+        dismiss(animated: true)
+    }
+    
+    override func viewWillLayoutSubviews() {
         let gradient  = CAGradientLayer()
         
         gradient.colors = [
@@ -38,4 +42,6 @@ final class ResultViewController: UIViewController {
         
         self.view.layer.insertSublayer(gradient, at: 0)
     }
+    
+
 }

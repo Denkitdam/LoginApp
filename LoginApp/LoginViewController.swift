@@ -25,6 +25,7 @@ final class LoginViewController: UIViewController {
         guard let destinationVC = segue.destination as? ResultViewController else { return }
         destinationVC.username = userNameTF.text
     }
+    
     @IBAction func loginButtonTapped() {
         if username.contains(self.userNameTF!.text!) && password.contains(passwordTF!.text!){
             performSegue(withIdentifier: "logIn", sender: nil)
@@ -35,7 +36,6 @@ final class LoginViewController: UIViewController {
             )
         }
     }
-        
     @IBAction func forgotUsernameTapped() {
         showAlert(
             withTitle: "Your Username is User",
@@ -49,12 +49,13 @@ final class LoginViewController: UIViewController {
         )
     }
     
-    
-    
-    
-    
     private func showAlert(withTitle title: String, andMessage message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
         let okButton = UIAlertAction(title: "Ok", style: .default) { _ in
             self.passwordTF.text = ""
         }

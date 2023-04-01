@@ -16,11 +16,6 @@ final class LoginViewController: UIViewController {
     private let username = "User"
     private let password = "1234"
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destinationVC = segue.destination as? ResultViewController else { return }
         destinationVC.username = userNameTF.text
@@ -31,9 +26,10 @@ final class LoginViewController: UIViewController {
             performSegue(withIdentifier: "logIn", sender: nil)
         } else {
             showAlert(
-                withTitle: "login or password is Invalid",
+                withTitle: "login or password is Incorrect",
                 andMessage: "Please enter correct login and password"
             )
+
         }
     }
     @IBAction func forgotUsernameTapped() {

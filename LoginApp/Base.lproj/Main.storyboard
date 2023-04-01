@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="oVM-Ea-1dd">
-                                <rect key="frame" x="60" y="100" width="200" height="168"/>
+                                <rect key="frame" x="60" y="57.5" width="200" height="168"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dcm-IB-I7C">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
@@ -55,21 +55,23 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="8FW-0M-RHH">
-                                <rect key="frame" x="16" y="276" width="288" height="54.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="8FW-0M-RHH">
+                                <rect key="frame" x="16" y="233.5" width="288" height="33"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXm-4z-f3F">
-                                        <rect key="frame" x="0.0" y="0.0" width="138.5" height="54.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="forgot username?"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="138.5" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="forgot username?"/>
                                         <connections>
                                             <action selector="forgotUsernameTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="aD2-j0-itJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBb-47-eaS">
-                                        <rect key="frame" x="149.5" y="0.0" width="138.5" height="54.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="forgot password?"/>
+                                        <rect key="frame" x="149.5" y="0.0" width="138.5" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="forgot password?"/>
                                         <connections>
                                             <action selector="forgotPasswordTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="diG-4k-uv1"/>
                                         </connections>
@@ -80,9 +82,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oVM-Ea-1dd" secondAttribute="bottom" multiplier="2.3" id="3cq-bC-MfM"/>
                             <constraint firstItem="oVM-Ea-1dd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="7Ii-ey-ZID"/>
                             <constraint firstAttribute="trailing" secondItem="8FW-0M-RHH" secondAttribute="trailing" constant="16" id="Z1R-Zp-wId"/>
-                            <constraint firstItem="oVM-Ea-1dd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="eb6-PI-lrn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oVM-Ea-1dd" secondAttribute="trailing" constant="60" id="gj0-Mc-0CE"/>
                             <constraint firstItem="8FW-0M-RHH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hhj-jO-ZeF"/>
                             <constraint firstItem="8FW-0M-RHH" firstAttribute="top" secondItem="oVM-Ea-1dd" secondAttribute="bottom" constant="8" id="xyU-EG-Shj"/>

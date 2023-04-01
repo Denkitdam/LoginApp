@@ -27,7 +27,7 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonTapped() {
-        if username.contains(self.userNameTF!.text!) && password.contains(passwordTF!.text!){
+        if username.contains(userNameTF!.text!) && password.contains(passwordTF!.text!){
             performSegue(withIdentifier: "logIn", sender: nil)
         } else {
             showAlert(
@@ -65,3 +65,18 @@ final class LoginViewController: UIViewController {
    }
 }
 
+extension LoginViewController: UITextFieldDelegate {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == userNameTF {
+            passwordTF.becomeFirstResponder()
+        } else {
+            loginButtonTapped()
+        }
+        return true
+    }
+}

@@ -13,7 +13,7 @@
 		C84C00A729D6181B00C47529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84C00A529D6181B00C47529 /* Main.storyboard */; };
 		C84C00A929D6181C00C47529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84C00A829D6181C00C47529 /* Assets.xcassets */; };
 		C84C00AC29D6181C00C47529 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84C00AA29D6181C00C47529 /* LaunchScreen.storyboard */; };
-		C84C00B429D6BF8900C47529 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84C00B329D6BF8900C47529 /* ResultViewController.swift */; };
+		C84C00B429D6BF8900C47529 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84C00B329D6BF8900C47529 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		C84C00A829D6181C00C47529 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C84C00AB29D6181C00C47529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C84C00AD29D6181C00C47529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C84C00B329D6BF8900C47529 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		C84C00B329D6BF8900C47529 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 				C84C009F29D6181B00C47529 /* AppDelegate.swift */,
 				C84C00A129D6181B00C47529 /* SceneDelegate.swift */,
 				C84C00A329D6181B00C47529 /* LoginViewController.swift */,
-				C84C00B329D6BF8900C47529 /* ResultViewController.swift */,
+				C84C00B329D6BF8900C47529 /* WelcomeViewController.swift */,
 				C84C00A529D6181B00C47529 /* Main.storyboard */,
 				C84C00A829D6181C00C47529 /* Assets.xcassets */,
 				C84C00AA29D6181C00C47529 /* LaunchScreen.storyboard */,
@@ -144,7 +144,7 @@
 				C84C00A429D6181B00C47529 /* LoginViewController.swift in Sources */,
 				C84C00A029D6181B00C47529 /* AppDelegate.swift in Sources */,
 				C84C00A229D6181B00C47529 /* SceneDelegate.swift in Sources */,
-				C84C00B429D6BF8900C47529 /* ResultViewController.swift in Sources */,
+				C84C00B429D6BF8900C47529 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ResultViewController: UIViewController {
+final class WelcomeViewController: UIViewController {
 
     @IBOutlet var greetingsLabel: UILabel!
     

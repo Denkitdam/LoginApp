@@ -106,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="-471" y="-6"/>
         </scene>
-        <!--Result View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="SQa-Ab-CN7">
             <objects>
-                <viewController id="xT9-1j-aet" customClass="ResultViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xT9-1j-aet" customClass="WelcomeViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ocd-rj-WjY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

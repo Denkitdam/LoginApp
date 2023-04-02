@@ -122,7 +122,7 @@
                                     <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="logOutButtonTapped" destination="xT9-1j-aet" eventType="touchUpInside" id="AVA-7B-6z2"/>
+                                    <segue destination="lHB-bb-UDw" kind="unwind" unwindAction="unwindFor:" id="cyH-IA-aTN"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Gao-kx-NDo">
@@ -157,6 +157,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bex-aa-84A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="lHB-bb-UDw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="277.60000000000002" y="-6.6502463054187197"/>
         </scene>

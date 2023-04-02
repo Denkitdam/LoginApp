@@ -39,10 +39,7 @@ final class WelcomeViewController: UIViewController {
             self.view.layer.insertSublayer(gradient, at: 0)
         }
         
-    @IBAction func logOutButtonTapped() {
-        dismiss(animated: true)
-    }
-    
+  
     
 
 }

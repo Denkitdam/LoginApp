@@ -9,7 +9,6 @@ import UIKit
 
 final class LoginViewController: UIViewController {
     
-    
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
@@ -43,6 +42,10 @@ final class LoginViewController: UIViewController {
             withTitle: "Your Password is 1234",
             andMessage: "Please enter your password"
         )
+    }
+    @IBAction func unwind(for: UIStoryboardSegue) {
+        userNameTF.text = ""
+        passwordTF.text = ""
     }
     
     private func showAlert(withTitle title: String, andMessage message: String) {

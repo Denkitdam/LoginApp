@@ -22,7 +22,7 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonTapped() {
-        if username.contains(userNameTF!.text!) && password.contains(passwordTF!.text!){
+        if userNameTF.text == username && passwordTF.text == password {
             performSegue(withIdentifier: "logIn", sender: nil)
         } else {
             showAlert(

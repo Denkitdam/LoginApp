@@ -12,15 +12,15 @@ final class LoginViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-  
+  private let user = User(name: "Alexey", username: "User", password: "1234")
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destinationVC = segue.destination as? InfoViewController else { return }
+        guard let destinationVC = segue.destination as? WelcomeViewController else { return }
         destinationVC.username = userNameTF.text
     }
     
     @IBAction func loginButtonTapped() {
-        if userNameTF.text == username && passwordTF.text == password {
+        if userNameTF.text == user.username && passwordTF.text == user.password {
             performSegue(withIdentifier: "logIn", sender: nil)
         } else {
             showAlert(
@@ -41,10 +41,6 @@ final class LoginViewController: UIViewController {
             withTitle: "Your Password is 1234",
             andMessage: "Please enter your password"
         )
-    }
-    @IBAction func unwind(for: UIStoryboardSegue) {
-        userNameTF.text = ""
-        passwordTF.text = ""
     }
     
     private func showAlert(withTitle title: String, andMessage message: String) {
@@ -78,3 +74,5 @@ extension LoginViewController: UITextFieldDelegate {
         return true
     }
 }
+
+

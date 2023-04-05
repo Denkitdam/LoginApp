@@ -23,8 +23,8 @@ final class WelcomeViewController: UIViewController {
             
             gradient.colors = [
                 UIColor.blue.cgColor,
-                UIColor.green.cgColor,
-                UIColor.purple.cgColor
+                UIColor.gray.cgColor,
+                UIColor.red.cgColor
             ]
             gradient.locations = [0.0, 1.0]
             gradient.startPoint = CGPoint(x: 0.0, y: 0.0)
@@ -39,7 +39,9 @@ final class WelcomeViewController: UIViewController {
             self.view.layer.insertSublayer(gradient, at: 0)
         }
         
-  
+    @IBAction func logOutButtonTapped() {
+        dismiss(animated: true)
+    }
     
 
 }

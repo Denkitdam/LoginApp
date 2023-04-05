@@ -99,7 +99,7 @@
                     <connections>
                         <outlet property="passwordTF" destination="JzR-qJ-x7B" id="37k-jQ-nQy"/>
                         <outlet property="userNameTF" destination="dcm-IB-I7C" id="yZs-FO-aaf"/>
-                        <segue destination="696-WZ-UU3" kind="presentation" modalPresentationStyle="fullScreen" id="8bM-aQ-bPq"/>
+                        <segue destination="696-WZ-UU3" kind="presentation" identifier="logIn" modalPresentationStyle="fullScreen" id="8bM-aQ-bPq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -248,6 +248,9 @@
                             <constraint firstItem="fVJ-wH-NB2" firstAttribute="centerX" secondItem="612-72-GKk" secondAttribute="centerX" id="wSr-nq-058"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greetingsLabel" destination="x4r-8Q-zJL" id="oDP-xR-4Uu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B8P-KB-rJo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -83,7 +83,6 @@
 		C84C009329D6181B00C47529 = {
 			isa = PBXGroup;
 			children = (
-				C82D484A29DC9275003C3EA5 /* Models */,
 				C84C009E29D6181B00C47529 /* LoginApp */,
 				C84C009D29D6181B00C47529 /* Products */,
 			);
@@ -100,6 +99,7 @@
 		C84C009E29D6181B00C47529 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
+				C82D484A29DC9275003C3EA5 /* Models */,
 				C82D484829DC9020003C3EA5 /* ViewControllers  */,
 				C82D484729DC8FF9003C3EA5 /* Storyboards */,
 				C84C00A829D6181C00C47529 /* Assets.xcassets */,

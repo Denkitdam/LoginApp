@@ -15,7 +15,7 @@ final class LoginViewController: UIViewController {
     private let user = User(name: "Alexey", username: "User", password: "1234")
     private let person = Person(
         image: "Portrait",
-        name: "Denis",
+        name: "Denis Kitaev",
         dateOfBirth: "05.03.1999",
         placeOfBirth: "Moscow",
         interests: [
@@ -23,7 +23,7 @@ final class LoginViewController: UIViewController {
         "Equestrian sport",
         "Music"
         ],
-        codingExperience: 2
+        codingExperience: "2 months"
     )
     
     override func viewDidLoad() {
@@ -33,8 +33,8 @@ final class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destinationVC = segue.destination as? WelcomeViewController else { return }
-        destinationVC.username = user.name
+        guard let destinationVC = segue.destination as? TabBarControler else { return }
+        
     }
     
     @IBAction func loginButtonTapped() {

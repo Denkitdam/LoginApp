@@ -11,7 +11,7 @@ struct Person {
     let dateOfBirth: String
     let placeOfBirth: String
     let interests: [String]
-    let codingExperience: Int
+    let codingExperience: String
     
     func showBio() -> String {
         "Person \(name), born \(dateOfBirth), in \(placeOfBirth), interested in \(interests.formatted()), has a coding experience of \(codingExperience)"

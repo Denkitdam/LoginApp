@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="oVM-Ea-1dd">
-                                <rect key="frame" x="60" y="57.5" width="200" height="168"/>
+                                <rect key="frame" x="60" y="91.5" width="200" height="168"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dcm-IB-I7C">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
@@ -55,7 +55,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="8FW-0M-RHH">
-                                <rect key="frame" x="16" y="233.5" width="288" height="33"/>
+                                <rect key="frame" x="16" y="267.5" width="288" height="33"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXm-4z-f3F">
                                         <rect key="frame" x="0.0" y="0.0" width="138.5" height="33"/>
@@ -81,7 +81,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oVM-Ea-1dd" secondAttribute="bottom" multiplier="2.3" id="3cq-bC-MfM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oVM-Ea-1dd" secondAttribute="bottom" multiplier="2" id="3cq-bC-MfM"/>
                             <constraint firstItem="oVM-Ea-1dd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="7Ii-ey-ZID"/>
                             <constraint firstAttribute="trailing" secondItem="8FW-0M-RHH" secondAttribute="trailing" constant="16" id="Z1R-Zp-wId"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oVM-Ea-1dd" secondAttribute="trailing" constant="60" id="gj0-Mc-0CE"/>
@@ -120,25 +120,25 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a5n-nm-KYv">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="72.5"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="am9-yi-9OP">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="am9-yi-9OP">
                                         <rect key="frame" x="0.0" y="125.5" width="288" height="89"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpF-tX-0iL">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpF-tX-0iL">
                                         <rect key="frame" x="0.0" y="267.5" width="288" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hA9-E1-ZWM">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place of birth " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hA9-E1-ZWM">
                                         <rect key="frame" x="0.0" y="341" width="288" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Seo-Vm-8Ib">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coding experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Seo-Vm-8Ib">
                                         <rect key="frame" x="0.0" y="414.5" width="288" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -157,8 +157,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MKZ-yg-6Lx">
-                        <barButtonItem key="rightBarButtonItem" title="bio" id="hSN-1v-slh"/>
+                        <barButtonItem key="rightBarButtonItem" title="bio" id="hSN-1v-slh">
+                            <connections>
+                                <segue destination="2pi-Jh-4aS" kind="presentation" id="g1m-A2-4Pz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="codingExperienceLabel" destination="Seo-Vm-8Ib" id="ZKL-dz-dvh"/>
+                        <outlet property="dateOfBirthLabel" destination="KpF-tX-0iL" id="Djm-rM-6TS"/>
+                        <outlet property="nameLabel" destination="am9-yi-9OP" id="XcF-vB-UFt"/>
+                        <outlet property="placeOfBirthLabel" destination="hA9-E1-ZWM" id="vPs-BB-ueC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GwY-Dx-l2W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,7 +179,7 @@
             <objects>
                 <viewController id="2pi-Jh-4aS" customClass="BioViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aq4-ll-zw2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPP-9b-GaD">
@@ -207,7 +217,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welome, User!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4r-8Q-zJL">
                                         <rect key="frame" x="0.0" y="0.0" width="156" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🖐️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7t-i1-cny">
@@ -226,8 +236,11 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Log out">
-                                            <color key="titleColor" systemColor="systemRedColor"/>
+                                            <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="logOutButtonTapped" destination="696-WZ-UU3" eventType="touchUpInside" id="Nmq-s7-sgU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -243,7 +256,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="greeting" image="hand.raised.fill" catalog="system" id="s3t-OJ-Qwh"/>
                     <connections>
-                        <outlet property="greetingsLabel" destination="x4r-8Q-zJL" id="oDP-xR-4Uu"/>
+                        <outlet property="greetingsLabel" destination="x4r-8Q-zJL" id="nLJ-7m-qUA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B8P-KB-rJo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -253,15 +266,16 @@
         <!--Tab Bar Controller-->
         <scene sceneID="3uW-bU-BuR">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="BTV-7K-E54" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="BTV-7K-E54" customClass="TabBarController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eUx-H1-czM">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="696-WZ-UU3" kind="relationship" relationship="viewControllers" id="k1L-gm-YI8"/>
-                        <segue destination="kbF-wE-tv1" kind="relationship" relationship="viewControllers" id="qr7-Zz-RGV"/>
+                        <segue destination="696-WZ-UU3" kind="relationship" relationship="viewControllers" id="IhY-HM-fNG"/>
+                        <segue destination="kbF-wE-tv1" kind="relationship" relationship="viewControllers" id="iUz-S6-5ZY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jta-oU-PkR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -292,6 +306,9 @@
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="hand.raised.fill" catalog="system" width="128" height="128"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -303,9 +320,6 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

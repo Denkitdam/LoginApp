@@ -38,13 +38,13 @@ final class LoginViewController: UIViewController {
         
         viewControllers.forEach { viewController in
             if let greetingsVC = viewController as? WelcomeViewController {
-                greetingsVC.username = user.name
+                greetingsVC.userName = user.name
             } else if let navigationVC = viewController as? UINavigationController {
                 guard let infoVC = navigationVC.topViewController as? InfoViewController else { return }
-                infoVC.nameLabel.text = "Name: \(person.name)"
-                infoVC.dateOfBirthLabel.text = "Date of birth \(person.dateOfBirth)"
-                infoVC.placeOfBirthLabel.text = "Place of birth \(person.placeOfBirth)"
-                infoVC.codingExperienceLabel.text = "Coding experience: \(person.codingExperience)"
+                infoVC.personName = person.name
+                infoVC.personDateOfBirth = person.dateOfBirth
+                infoVC.personPlaceOFBirth = person.placeOfBirth
+                infoVC.personCodingExperience = infoVC.personCodingExperience
                 
             }
             

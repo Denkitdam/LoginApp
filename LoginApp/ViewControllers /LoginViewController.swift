@@ -12,11 +12,29 @@ final class LoginViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-  private let user = User(name: "Alexey", username: "User", password: "1234")
+    private let user = User(name: "Alexey", username: "User", password: "1234")
+    private let person = Person(
+        image: "Portrait",
+        name: "Denis",
+        dateOfBirth: "05.03.1999",
+        placeOfBirth: "Moscow",
+        interests: [
+        "Coding",
+        "Equestrian sport",
+        "Music"
+        ],
+        codingExperience: 2
+    )
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        userNameTF.text = user.username
+        passwordTF.text = user.password
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destinationVC = segue.destination as? WelcomeViewController else { return }
-        destinationVC.username = userNameTF.text
+        destinationVC.username = user.name
     }
     
     @IBAction func loginButtonTapped() {
@@ -58,7 +76,7 @@ final class LoginViewController: UIViewController {
         present(alert, animated: true)
    }
 }
-  // MARK: - keyboard extention
+  // MARK: - keyboard extension
 extension LoginViewController: UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)

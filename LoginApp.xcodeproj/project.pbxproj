@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C82D484C29DC9298003C3EA5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D484B29DC9298003C3EA5 /* User.swift */; };
 		C82D484E29DC934A003C3EA5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D484D29DC934A003C3EA5 /* Person.swift */; };
+		C82D485029DD6F71003C3EA5 /* TabBarControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D484F29DD6F70003C3EA5 /* TabBarControler.swift */; };
 		C84C00A029D6181B00C47529 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84C009F29D6181B00C47529 /* AppDelegate.swift */; };
 		C84C00A229D6181B00C47529 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84C00A129D6181B00C47529 /* SceneDelegate.swift */; };
 		C84C00A429D6181B00C47529 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84C00A329D6181B00C47529 /* LoginViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		C82D484B29DC9298003C3EA5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C82D484D29DC934A003C3EA5 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		C82D484F29DD6F70003C3EA5 /* TabBarControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControler.swift; sourceTree = "<group>"; };
 		C84C009C29D6181B00C47529 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84C009F29D6181B00C47529 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C84C00A129D6181B00C47529 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				C84C00A329D6181B00C47529 /* LoginViewController.swift */,
+				C82D484F29DD6F70003C3EA5 /* TabBarControler.swift */,
 				C84C00B329D6BF8900C47529 /* WelcomeViewController.swift */,
 			);
 			path = "ViewControllers ";
@@ -182,6 +185,7 @@
 				C82D484E29DC934A003C3EA5 /* Person.swift in Sources */,
 				C84C00A429D6181B00C47529 /* LoginViewController.swift in Sources */,
 				C84C00A029D6181B00C47529 /* AppDelegate.swift in Sources */,
+				C82D485029DD6F71003C3EA5 /* TabBarControler.swift in Sources */,
 				C84C00A229D6181B00C47529 /* SceneDelegate.swift in Sources */,
 				C82D484C29DC9298003C3EA5 /* User.swift in Sources */,
 				C84C00B429D6BF8900C47529 /* WelcomeViewController.swift in Sources */,

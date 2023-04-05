@@ -33,10 +33,23 @@ final class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destinationVC = segue.destination as? TabBarControler else { return }
+        guard let tabBarController = segue.destination as? TabBarController else { return }
+        guard let viewControllers = tabBarController.viewControllers else { return }
         
+        viewControllers.forEach { viewController in
+            if let greetingsVC = viewController as? WelcomeViewController {
+                greetingsVC.username = user.name
+            } else if let navigationVC = viewController as? UINavigationController {
+                guard let infoVC = navigationVC.topViewController as? InfoViewController else { return }
+                infoVC.nameLabel.text = "Name: \(person.name)"
+                infoVC.dateOfBirthLabel.text = "Date of birth \(person.dateOfBirth)"
+                infoVC.placeOfBirthLabel.text = "Place of birth \(person.placeOfBirth)"
+                infoVC.codingExperienceLabel.text = "Coding experience: \(person.codingExperience)"
+                
+            }
+            
+        }
     }
-    
     @IBAction func loginButtonTapped() {
         if userNameTF.text == user.username && passwordTF.text == user.password {
             performSegue(withIdentifier: "logIn", sender: nil)
